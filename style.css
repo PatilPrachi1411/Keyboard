@@ -1,0 +1,640 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(213, 220, 233);
+}
+
+.container-1 {
+  margin: 4rem;
+  margin-bottom: 0.5rem;
+  width: 80rem;
+  background: #252525;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.container-1 > input {
+  width: 79rem;
+  border-radius: 0.5rem;
+  height: 4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #252525;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border: 0.11rem solid burlywood;
+}
+
+.container {
+  margin: 4rem;
+  margin-top: 0rem;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  width: 80rem;
+  height: 22rem;
+  justify-content: start;
+  background: #252525;
+  border-radius: 0.5rem;
+}
+
+.container,
+.container-1,
+.container1,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6,
+.container7,
+.container71,
+.container72,
+.container73,
+.container74,
+.container75,
+.container76,
+.cell {
+  display: grid;
+}
+
+.container1 {
+  gap: 1.09rem;
+  justify-content: center;
+  grid-template-areas: "esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 ";
+}
+
+.container2 {
+  gap: 1.09rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+  grid-template-areas: "tilde one two three four five six seven eight nine zero dash equal arrow ";
+}
+
+.container3 {
+  gap: 1.09rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+  grid-template-areas: "tab q w e r t y u i o p lcurlybrace rcurlybrace bslash";
+}
+
+.container4 {
+  grid-template-areas: "capslock a s d f g h j k l colon quote enter";
+  gap: 1.1rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-left: 0rem;
+}
+
+.container5 {
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+  grid-template-areas: "shift1 z x c v b n m comma dot fslash uparrow shift2";
+}
+
+.container6 {
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+  grid-template-areas: "ctrl1 window alt1 space alt2 ctrl2 leftarrow downarrow rightarrow ";
+}
+
+.cell,
+.cell1,
+.cell2,
+.cell3,
+.cell4,
+.cell5,
+.cell6 {
+  margin: 0.1rem;
+  height: 2.5rem;
+  background-color: #252525;
+  color: #fff;
+  border: 0.11rem solid burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.cell1 {
+  width: 3.2rem;
+}
+
+.cell2 {
+  width: 2.9rem;
+}
+
+.cell3 {
+  width: 2.9rem;
+}
+
+.cell4 {
+  width: 3.2rem;
+}
+
+.cell5 {
+  width: 3.57rem;
+}
+
+.cell6 {
+  width: 4.4rem;
+}
+
+#esc {
+  grid-area: "esc";
+}
+
+#f1 {
+  grid-area: "f1";
+}
+
+#f2 {
+  grid-area: "f2";
+}
+
+#f3 {
+  grid-area: "f3";
+}
+
+#f4 {
+  grid-area: "f4";
+}
+
+#f5 {
+  grid-area: "f5";
+}
+
+#f6 {
+  grid-area: "f6";
+}
+
+#f7 {
+  grid-area: "f7";
+}
+
+#f8 {
+  grid-area: "f8";
+}
+
+#f9 {
+  grid-area: "f9";
+}
+
+#f10 {
+  grid-area: "f10";
+}
+
+#f11 {
+  grid-area: "f11";
+}
+
+#f12 {
+  grid-area: "f12";
+}
+
+#tilde {
+  grid-area: "tilde";
+}
+
+#one {
+  grid-area: "1";
+}
+
+#two {
+  grid-area: "2";
+}
+
+#three {
+  grid-area: "3";
+}
+
+#four {
+  grid-area: "4";
+}
+
+#five {
+  grid-area: "5";
+}
+
+#six {
+  grid-area: "6";
+}
+
+#seven {
+  grid-area: "7";
+}
+
+#eight {
+  grid-area: "8";
+}
+
+#nine {
+  grid-area: "9";
+}
+
+#zero {
+  grid-area: "0";
+}
+
+#dash {
+  grid-area: "dash";
+}
+
+#equal {
+  grid-area: "equal";
+}
+
+#arrow {
+  grid-area: "arrow";
+}
+
+#numlock {
+  grid-area: "numlock";
+}
+
+#divide {
+  grid-area: "divide";
+}
+
+#asterisk {
+  grid-area: "asterisk";
+}
+
+#minus {
+  grid-area: "minus";
+}
+
+#tab {
+  grid-area: "tab";
+}
+
+#q {
+  grid-area: "q";
+}
+
+#w {
+  grid-area: "w";
+}
+
+#e {
+  grid-area: "e";
+}
+
+#r {
+  grid-area: "r";
+}
+
+#t {
+  grid-area: "t";
+}
+
+#y {
+  grid-area: "y";
+}
+
+#u {
+  grid-area: "u";
+}
+
+#i {
+  grid-area: "i";
+}
+
+#o {
+  grid-area: "o";
+}
+
+#p {
+  grid-area: "p";
+}
+
+#lcurlybrace {
+  grid-area: "lcurlybrace";
+}
+
+#rcurlybrace {
+  grid-area: "rcurlybrace";
+}
+
+#fslash {
+  grid-area: "fslash";
+}
+
+#plus {
+  grid-area: "plus";
+}
+
+#capslock {
+  grid-area: "capslock";
+}
+
+#a {
+  grid-area: "a";
+}
+
+#s {
+  grid-area: "s";
+}
+
+#d {
+  grid-area: "d";
+}
+
+#f {
+  grid-area: "f";
+}
+
+#g {
+  grid-area: "g";
+}
+
+#h {
+  grid-area: "h";
+}
+
+#j {
+  grid-area: "j";
+}
+
+#k {
+  grid-area: "k";
+}
+
+#l {
+  grid-area: "l";
+}
+
+#colon {
+  grid-area: "colon";
+}
+
+#quote {
+  grid-area: "quote";
+}
+
+#enter {
+  grid-area: "enter";
+}
+
+#shift1 {
+  grid-area: "shift1";
+}
+
+#z {
+  grid-area: "z";
+}
+
+#x {
+  grid-area: "x";
+}
+
+#c {
+  grid-area: "c";
+}
+
+#v {
+  grid-area: "v";
+}
+
+#b {
+  grid-area: "b";
+}
+
+#n {
+  grid-area: "n";
+}
+
+#m {
+  grid-area: "m";
+}
+
+#comma {
+  grid-area: "comma";
+}
+
+#dot {
+  grid-area: "dot";
+}
+
+#bslash {
+  grid-area: "bslash";
+}
+
+#shift2 {
+  grid-area: "shift2";
+  width: 4rem;
+}
+
+#ctrl1 {
+  grid-area: "ctrl1";
+}
+
+#window {
+  grid-area: "window";
+}
+
+#alt1 {
+  grid-area: "alt";
+}
+
+#space {
+  width: 12.4rem;
+  grid-area: "space";
+}
+
+#alt2 {
+  grid-area: "alt";
+}
+
+#ctrl2 {
+  grid-area: "ctrl2";
+}
+
+#uparrow {
+  grid-area: "uparrow";
+  width: 4.4rem;
+}
+
+#downarrow {
+  grid-area: "downarrow";
+}
+
+#leftarrow {
+  grid-area: "leftarrow";
+}
+
+#rightarrow {
+  grid-area: "rightarrow";
+}
+
+#dot {
+  grid-area: "dot";
+}
+
+#enter {
+  grid-area: "enter";
+}
+
+.container7 {
+  gap: 1rem;
+  width: 18rem;
+  position: relative;
+  left: 60rem;
+  bottom: 18.5rem;
+}
+
+.container71 {
+  grid-template-areas: "del pause prtsc home";
+}
+
+.container72 {
+  grid-template-areas: "numlock divide asterisk minus";
+}
+
+.container73 {
+  grid-template-areas: "seven1 eight1 nine1 plus1";
+}
+
+.container74 {
+  grid-template-areas: "four1 five1 six1";
+  width: 10rem;
+}
+
+.container75 {
+  gap: 0.5rem;
+  grid-template-areas: "one1 two1 three1 enter1";
+  width: 10rem;
+}
+
+.container76 {
+  grid-template-areas: "zero dot1";
+}
+
+.cell {
+  gap: 1rem;
+  width: 3.5rem;
+  
+}
+
+#del {
+  grid-area: "del";
+}
+
+#pause {
+  grid-area: "pause";
+}
+
+#prtsc {
+  grid-area: "prtsc";
+}
+
+#home {
+  grid-area: "home";
+}
+
+#numlock {
+  grid-area: "numlock";
+}
+
+#divide {
+  grid-area: "divide";
+}
+
+#asterisk {
+  grid-area: "asterisk";
+}
+
+#minus {
+  grid-area: "minus";
+}
+
+#seven1 {
+  grid-area: "seven1";
+}
+
+#eight1 {
+  grid-area: "eight1";
+}
+
+#nine1 {
+  grid-area: "nine1";
+}
+
+#plus1 {
+  height: 5rem;
+  grid-area: "plus1";
+}
+
+#four1 {
+  grid-area: "four1";
+  position: absolute;
+  top: 10rem;
+  left: 0rem;
+}
+
+#five1 {
+  grid-area: "five1";
+  position: absolute;
+  top: 10rem;
+  left: 4.5rem;
+}
+
+#six1 {
+  grid-area: "six1";
+  position: absolute;
+  top: 10rem;
+  left: 9rem;
+}
+
+#one1 {
+  grid-area: "one1";
+  position: absolute;
+  top: 13rem;
+  left: 0rem;
+}
+
+#two1 {
+  grid-area: "two1";
+  position: absolute;
+  top: 13rem;
+  left: 4.5rem;
+}
+
+#three1 {
+  grid-area: "three1";
+  position: absolute;
+  top: 13rem;
+  left: 9rem;
+}
+
+#zero1 {
+  width: 8rem;
+  grid-area: "zero1";
+  position: absolute;
+  top: 16rem;
+  left: 0rem;
+}
+
+#dot1 {
+  grid-area: "dot1";
+  position: absolute;
+  top: 16rem;
+  left: 9rem;
+}
+
+#enter1 {
+  grid-area: "enter1";
+  height: 5.5rem;
+  position: absolute;
+  top: 13rem;
+  left: 13.5rem;
+}
